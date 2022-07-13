@@ -1,0 +1,120 @@
+* {
+    font-size: 1em;
+    font-family: Segoe UI, sans-serif;
+    box-sizing: border-box;
+}
+
+.message-cont {
+    display: flex;
+    max-width: 450px;
+    padding: 15px;
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+.text-editor,
+.preview {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+
+/* TEXT EDITOR */
+
+.text-editor>button {
+    border: 1px solid #aaa;
+    border-bottom: 0px solid white;
+    border-radius: 5px 5px 0 0;
+    color: #1f77fd;
+    position: relative;
+    padding: 5px 10px;
+    top: 1px;
+}
+
+.text-editor>textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+    outline: 0;
+}
+
+.text-editor>p {
+    font-size: 0.7em;
+    opacity: 0.7;
+    padding: 5px 10px;
+    margin-top: 0;
+}
+
+.empty-text-editor {
+    position: relative;
+    top: 32px;
+    width: 100%;
+    height: 0;
+    text-align: right;
+}
+
+.empty-text-editor>img {
+    width: 28px;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.empty-text-editor>img:active {
+    opacity: 0.9;
+}
+
+
+/* SELECT DATA FIELDS */
+
+.placeholders {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.placeholders>button {
+    border: 0px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #586083;
+    outline: 0;
+    transition: color 0.4s;
+}
+
+.placeholders>button:hover {
+    color: #1f77fd;
+}
+
+.placeholders>button:active {
+    color: #1f78fd8a;
+}
+
+
+/* PREVIEW */
+
+.preview>p {
+    margin: 0;
+    color: #62a0fd;
+    font-weight: 600;
+    padding: 5px 10px;
+    padding: 2px 0;
+}
+
+.preview>div {
+    width: 100%;
+    background: #62a0fd;
+    padding: 25px;
+    border-radius: 0 25px 25px;
+    text-align: left;
+    color: white;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
